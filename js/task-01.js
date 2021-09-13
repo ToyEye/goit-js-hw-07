@@ -39,7 +39,9 @@
 
 const numberEl = document.querySelectorAll('.item');
 const summ = numberEl.length;
+
+
 console.log(`В списке ${summ} категории.`);
 
 const titelEL = document.querySelectorAll('h2');
-console.log("~ titelEL", titelEL)
+console.log(titelEL);
