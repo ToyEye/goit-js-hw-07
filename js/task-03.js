@@ -14,5 +14,8 @@ const images = [
   },
 ];
 
-const urlEl = document.querySelector('#gallery');
+const findGalleryRef = document.querySelector('#gallery');
+
+const makeImgRef = images.map(image => findGalleryRef.insertAdjacentHTML('afterbegin', `<li class ="img__list"><img src="${image.url}" alt = "${image.alt}" > </li>`));
+
 
