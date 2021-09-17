@@ -18,7 +18,7 @@ const  addCounterPoint = () => {
 }
 
 
-refs.removeCounter.removeEventListener('click', removeCounterPoint);
+refs.removeCounter.addEventListener('click', removeCounterPoint);
 refs.addCounter.addEventListener('click', addCounterPoint);
 
 
