@@ -4,15 +4,18 @@ const refs = {
 }
 
 
-refs.inputRef.addEventListener('input',changeInpuut);
+refs.inputRef.addEventListener('input',changeInput);
 
-function changeInpuut(e) {
-    if (e.target.value.length > 0) {
-        refs.outputRef.textContent = e.target.value;
-        }
-    else {
-        refs.outputRef.textContent = `незнакомец`;
-    }
+function changeInput(e) {
+      // Вариант 1
+    // if (e.target.value.length > 0) {
+    //     refs.outputRef.textContent = e.target.value;
+    //     }
+    // else {
+    //     refs.outputRef.textContent = `незнакомец`;
+    // }
+      // Вариант 2
+    e.target.value.length > 0 ? refs.outputRef.textContent = e.target.value : refs.outputRef.textContent = `незнакомец`;
 }
 
 
